@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Farm to Mart connects farmers and buyers directly. From Every Farm, To Every Home.">
+<title>Farm to Mart | From Every Farm, To Every Home</title>
+<style>
+:root{--green:#176b3a;--deep:#104d2b;--lime:#e8f3e9;--gold:#f2b544;--ink:#1e2b22;--muted:#657268;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fbfdfb}
+header{background:var(--white);position:sticky;top:0;z-index:5;box-shadow:0 2px 14px #0000000d}
+.nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:800;color:var(--green);font-size:1.25rem;letter-spacing:.4px}.brand small{display:block;font-size:.68rem;color:var(--muted);font-weight:600;letter-spacing:1.5px}
+nav{display:flex;gap:20px;align-items:center}nav a{color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:600}
+.lang{border:1px solid #cbd9ce;background:white;border-radius:999px;padding:9px 14px;color:var(--green);font-weight:700;cursor:pointer}
+.hero{background:linear-gradient(115deg,#104d2b 0%,#176b3a 60%,#39834b 100%);color:white;padding:86px 22px}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:center}
+.eyebrow{color:#d7f1dc;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.4rem,6vw,4.7rem);line-height:1.05;margin:14px 0 18px;max-width:750px}
+.hero p{font-size:1.15rem;max-width:650px;color:#edf7ef}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:13px 20px;border-radius:9px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
+.btn-light{background:white;color:var(--deep)}.btn-outline{border:1px solid #ffffffa8;color:white}
+.hero-card{background:#ffffff15;border:1px solid #ffffff35;border-radius:22px;padding:28px;text-align:center}
+.hero-card .symbol{font-size:5rem}.hero-card strong{display:block;font-size:1.5rem}.hero-card span{color:#e4f4e7}
+section{padding:68px 22px}.container{max-width:1120px;margin:auto}
+.section-tag{color:var(--green);font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:.78rem}
+h2{font-size:2rem;line-height:1.2;margin:8px 0 14px;color:var(--deep)}
+.lead{color:var(--muted);max-width:760px;font-size:1.05rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.card{background:white;border:1px solid #e4ece5;border-radius:16px;padding:24px;box-shadow:0 8px 25px #153c1c08}
+.card .icon{font-size:2rem}.card h3{margin:10px 0 6px;color:var(--deep)}
+.soft{background:var(--lime)}
+.product{border-top:4px solid var(--gold)}
+.pill{display:inline-block;background:#edf6ee;color:var(--green);font-size:.78rem;font-weight:700;padding:5px 10px;border-radius:999px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}
+ul{padding-left:20px;color:var(--muted)}
+form{display:grid;gap:12px;margin-top:18px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ccd9ce;border-radius:9px;font:inherit;background:white}
+textarea{min-height:110px;resize:vertical}
+button.submit{background:var(--green);color:white;padding:14px;border:0;border-radius:9px;font-weight:800;font-size:1rem;cursor:pointer}
+.note{font-size:.85rem;color:var(--muted)}
+footer{background:#103e25;color:#e9f4eb;padding:35px 22px}
+footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer p{margin:5px 0;color:#cfe1d2}
+@media(max-width:760px){nav{display:none}.hero-inner,.split{grid-template-columns:1fr}.hero{padding:62px 22px}.hero-card{max-width:340px}.grid{grid-template-columns:1fr}.nav{padding:12px 16px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+  <div class="brand">FARM TO MART <small>F2M · FROM EVERY FARM, TO EVERY HOME</small></div>
+  <nav><a href="#about" data-en="About" data-ta="எங்களைப் பற்றி">About</a><a href="#products" data-en="Products" data-ta="பொருட்கள்">Products</a><a href="#farmers" data-en="Farmers" data-ta="விவசாயிகள்">Farmers</a><a href="#buyers" data-en="Buyers" data-ta="வாங்குபவர்கள்">Buyers</a><a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a></nav>
+  <button class="lang" id="languageBtn" type="button">தமிழ்</button>
+</div></header>
+
+<main>
+<section class="hero"><div class="hero-inner">
+  <div>
+    <div class="eyebrow" data-en="A simpler way to connect agriculture" data-ta="விவசாயத்தை இணைக்கும் எளிய வழி">A simpler way to connect agriculture</div>
+    <h1 data-en="From Every Farm, To Every Home." data-ta="ஒவ்வொரு பண்ணையிலிருந்தும், ஒவ்வொரு இல்லத்திற்கும்.">From Every Farm, To Every Home.</h1>
+    <p data-en="We bring farmers and buyers together in one place. Building direct connections and better opportunities for everyone in agriculture." data-ta="விவசாயிகளையும் வாங்குபவர்களையும் ஒரே தளத்தில் இணைக்கிறோம். விவசாயத்தில் உள்ள அனைவருக்கும் நேரடி தொடர்புகளையும் சிறந்த வாய்ப்புகளையும் உருவாக்குகிறோம்.">We bring farmers and buyers together in one place. Building direct connections and better opportunities for everyone in agriculture.</p>
+    <div class="actions"><a class="btn btn-light" href="#farmers" data-en="I am a Farmer" data-ta="நான் ஒரு விவசாயி">I am a Farmer</a><a class="btn btn-outline" href="#buyers" data-en="I am a Buyer" data-ta="நான் ஒரு வாங்குபவர்">I am a Buyer</a></div>
+  </div>
+  <div class="hero-card"><div class="symbol">🌱</div><strong>F2M</strong><span data-en="Connecting Farms. Connecting People." data-ta="பண்ணைகளை இணைப்போம். மக்களை இணைப்போம்.">Connecting Farms. Connecting People.</span></div>
+</div></section>
+
+<section id="about"><div class="container">
+  <div class="section-tag" data-en="Who we are" data-ta="நாங்கள் யார்">Who we are</div>
+  <h2 data-en="A direct connection from farm to market" data-ta="பண்ணையிலிருந்து சந்தைக்கு நேரடி இணைப்பு">A direct connection from farm to market</h2>
+  <p class="lead" data-en="Farm to Mart (F2M) is a developing agricultural marketplace concept. Our aim is to help farmers present their produce and help buyers discover suppliers more easily. We are starting with fresh and semi-husked coconuts from Tamil Nadu." data-ta="Farm to Mart (F2M) என்பது வளர்ந்து வரும் விவசாய சந்தைத் தள முயற்சி. விவசாயிகள் தங்கள் விளைபொருட்களை அறிமுகப்படுத்தவும், வாங்குபவர்கள் வழங்குநர்களைக் கண்டறியவும் உதவுவதே எங்கள் நோக்கம். தமிழ்நாட்டிலிருந்து புதிய மற்றும் பகுதி மட்டை நீக்கப்பட்ட தேங்காய்களுடன் தொடங்குகிறோம்.">Farm to Mart (F2M) is a developing agricultural marketplace concept. Our aim is to help farmers present their produce and help buyers discover suppliers more easily. We are starting with fresh and semi-husked coconuts from Tamil Nadu.</p>
+</div></section>
+
+<section class="soft" id="products"><div class="container">
+  <div class="section-tag" data-en="Starting product" data-ta="தொடக்கப் பொருள்">Starting product</div>
+  <h2 data-en="What we are focusing on" data-ta="எங்கள் தொடக்க கவனம்">What we are focusing on</h2>
+  <div class="grid"><article class="card product"><div class="icon">🥥</div><span class="pill" data-en="Initial focus" data-ta="தொடக்க கவனம்">Initial focus</span><h3 data-en="Fresh coconuts" data-ta="புதிய தேங்காய்கள்">Fresh coconuts</h3><p data-en="Connecting interested buyers with coconut suppliers. Availability, grade, quantity and price will be confirmed directly." data-ta="தேங்காய் வழங்குநர்களுடன் ஆர்வமுள்ள வாங்குபவர்களை இணைத்தல். இருப்பு, தரம், அளவு மற்றும் விலை நேரடியாக உறுதிப்படுத்தப்படும்.">Connecting interested buyers with coconut suppliers. Availability, grade, quantity and price will be confirmed directly.</p></article>
+  <article class="card product"><div class="icon">🌴</div><span class="pill" data-en="Initial focus" data-ta="தொடக்க கவனம்">Initial focus</span><h3 data-en="Semi-husked coconuts" data-ta="பகுதி மட்டை நீக்கப்பட்ட தேங்காய்கள்">Semi-husked coconuts</h3><p data-en="Enquiries for bulk requirements are welcome. Product specifications and logistics are discussed before any order." data-ta="மொத்தத் தேவைகளுக்கான விசாரணைகள் வரவேற்கப்படுகின்றன. ஆர்டருக்கு முன் பொருள் விவரங்களும் போக்குவரத்தும் பேசப்படும்.">Enquiries for bulk requirements are welcome. Product specifications and logistics are discussed before any order.</p></article>
+  <article class="card"><div class="icon">🤝</div><h3 data-en="Direct enquiries" data-ta="நேரடி விசாரணைகள்">Direct enquiries</h3><p data-en="Farmers and buyers can contact us to discuss supply, demand and possible partnerships." data-ta="வழங்கல், தேவை மற்றும் கூட்டாண்மை வாய்ப்புகள் குறித்து விவசாயிகளும் வாங்குபவர்களும் எங்களைத் தொடர்புகொள்ளலாம்.">Farmers and buyers can contact us to discuss supply, demand and possible partnerships.</p></article></div>
+</div></section>
+
+<section id="farmers"><div class="container split">
+  <div><div class="section-tag" data-en="For farmers" data-ta="விவசாயிகளுக்காக">For farmers</div><h2 data-en="Let buyers discover your produce" data-ta="உங்கள் விளைபொருட்களை வாங்குபவர்கள் அறியட்டும்">Let buyers discover your produce</h2><p class="lead" data-en="Tell us what you grow, where you are located and how much you can supply. We will review your enquiry and contact you." data-ta="நீங்கள் விளைவிப்பது என்ன, உங்கள் இடம் எது, எவ்வளவு வழங்க முடியும் என்பதைத் தெரிவிக்கவும். உங்கள் விசாரணையைப் பார்த்து நாங்கள் தொடர்புகொள்வோம்.">Tell us what you grow, where you are located and how much you can supply. We will review your enquiry and contact you.</p><ul><li data-en="Share your product and quantity" data-ta="பொருள் மற்றும் அளவைப் பகிரவும்">Share your product and quantity</li><li data-en="Tell us your location" data-ta="உங்கள் இருப்பிடத்தைத் தெரிவிக்கவும்">Tell us your location</li><li data-en="Discuss buyer enquiries directly" data-ta="வாங்குபவர்களின் விசாரணைகளை நேரடியாகப் பேசவும்">Discuss buyer enquiries directly</li></ul></div>
+  <div class="card"><h3 data-en="Farmer enquiry" data-ta="விவசாயி விசாரணை">Farmer enquiry</h3><form class="mail-form"><input name="name" required placeholder="Your name / உங்கள் பெயர்"><input name="phone" required placeholder="Phone number / தொலைபேசி எண்"><input name="location" required placeholder="Village / District / கிராமம் / மாவட்டம்"><input name="product" required placeholder="Product and quantity / பொருள் மற்றும் அளவு"><textarea name="message" placeholder="Additional details / கூடுதல் விவரங்கள்"></textarea><input type="hidden" name="type" value="Farmer enquiry"><button class="submit" type="submit" data-en="Send farmer enquiry" data-ta="விவசாயி விசாரணையை அனுப்பவும்">Send farmer enquiry</button></form><p class="note" data-en="Your email app will open with the enquiry prepared. Nothing is sent automatically." data-ta="விசாரணை விவரங்களுடன் உங்கள் மின்னஞ்சல் செயலி திறக்கும். தானாக எதுவும் அனுப்பப்படாது.">Your email app will open with the enquiry prepared. Nothing is sent automatically.</p></div>
+</div></section>
+
+<section class="soft" id="buyers"><div class="container split">
+  <div><div class="section-tag" data-en="For buyers" data-ta="வாங்குபவர்களுக்காக">For buyers</div><h2 data-en="Tell us what you are looking for" data-ta="உங்களுக்கு என்ன தேவை என்பதைத் தெரிவிக்கவும்">Tell us what you are looking for</h2><p class="lead" data-en="Share your product requirements, quantity and delivery location. We will follow up to understand your enquiry." data-ta="உங்கள் பொருள் தேவை, அளவு மற்றும் விநியோக இடத்தைப் பகிரவும். உங்கள் தேவையைப் புரிந்துகொள்ள நாங்கள் தொடர்புகொள்வோம்.">Share your product requirements, quantity and delivery location. We will follow up to understand your enquiry.</p></div>
+  <div class="card"><h3 data-en="Buyer enquiry" data-ta="வாங்குபவர் விசாரணை">Buyer enquiry</h3><form class="mail-form"><input name="name" required placeholder="Your name / உங்கள் பெயர்"><input name="phone" required placeholder="Phone or WhatsApp / தொலைபேசி அல்லது வாட்ஸ்அப்"><input name="location" required placeholder="City / Country / நகரம் / நாடு"><input name="product" required placeholder="Product and required quantity / பொருள் மற்றும் தேவையான அளவு"><textarea name="message" placeholder="Delivery needs or other details / விநியோகம் அல்லது பிற விவரங்கள்"></textarea><input type="hidden" name="type" value="Buyer enquiry"><button class="submit" type="submit" data-en="Send buyer enquiry" data-ta="வாங்குபவர் விசாரணையை அனுப்பவும்">Send buyer enquiry</button></form><p class="note" data-en="Your email app will open with the enquiry prepared. Nothing is sent automatically." data-ta="விசாரணை விவரங்களுடன் உங்கள் மின்னஞ்சல் செயலி திறக்கும். தானாக எதுவும் அனுப்பப்படாது.">Your email app will open with the enquiry prepared. Nothing is sent automatically.</p></div>
+</div></section>
+
+<section id="contact"><div class="container"><div class="section-tag" data-en="Get in touch" data-ta="தொடர்பு கொள்ளுங்கள்">Get in touch</div><h2 data-en="Let's connect" data-ta="இணைவோம்">Let's connect</h2><p class="lead" data-en="For farmer, buyer and partnership enquiries, email us." data-ta="விவசாயி, வாங்குபவர் மற்றும் கூட்டாண்மை விசாரணைகளுக்கு எங்களுக்கு மின்னஞ்சல் அனுப்புங்கள்.">For farmer, buyer and partnership enquiries, email us.</p><p><strong>Email:</strong> <a href="mailto:farmtomart.exports@gmail.com">farmtomart.exports@gmail.com</a></p><p class="note" data-en="Farm to Mart is currently developing its supplier and buyer network. Product availability, prices, quality, delivery and export arrangements are subject to confirmation." data-ta="Farm to Mart தற்போது விவசாயிகள் மற்றும் வாங்குபவர்களின் வலையமைப்பை உருவாக்கி வருகிறது. பொருள் இருப்பு, விலை, தரம், விநியோகம் மற்றும் ஏற்றுமதி ஏற்பாடுகள் உறுதிப்படுத்தப்பட வேண்டும்.">Farm to Mart is currently developing its supplier and buyer network. Product availability, prices, quality, delivery and export arrangements are subject to confirmation.</p></div></section>
+</main>
+<footer><div class="container"><div><strong>FARM TO MART (F2M)</strong><p data-en="From Every Farm, To Every Home." data-ta="ஒவ்வொரு பண்ணையிலிருந்தும், ஒவ்வொரு இல்லத்திற்கும்.">From Every Farm, To Every Home.</p></div><p>© <span id="year"></span> Farm to Mart</p></div></footer>
+<script>
+let tamil=false;
+const btn=document.getElementById('languageBtn');
+btn.addEventListener('click',()=>{
+  tamil=!tamil; document.documentElement.lang=tamil?'ta':'en';
+  document.querySelectorAll('[data-en][data-ta]').forEach(el=>{el.textContent=tamil?el.dataset.ta:el.dataset.en});
+  btn.textContent=tamil?'English':'தமிழ்';
+});
+document.querySelectorAll('.mail-form').forEach(form=>form.addEventListener('submit',e=>{
+  e.preventDefault(); const data=new FormData(form); let body='';
+  for(const [k,v] of data.entries()) if(k!=='type') body+=`${k}: ${v}\n`;
+  const subject=encodeURIComponent(`${data.get('type')} - Farm to Mart`);
+  location.href=`mailto:farmtomart.exports@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
